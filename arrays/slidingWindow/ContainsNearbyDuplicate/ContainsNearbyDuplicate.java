@@ -1,4 +1,4 @@
-package arrays.slidingWindow;
+package arrays.slidingWindow.ContainsNearbyDuplicate;
 
 import java.util.HashMap;
 import java.util.HashSet;
