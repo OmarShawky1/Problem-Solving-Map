@@ -6,14 +6,14 @@
 
 | Problem Name | Solutions | Complexity |
 |:-:|:-:|:-:|
-| [2016. Maximum Difference Between Increasing Elements](https://leetcode.com/problems/maximum-difference-between-increasing-elements/description/) | [Java](arrays/MaximumDifference.java) | $O_T(n),\ O_S(1)$|
+| [Maximum Difference Between Increasing Elements](https://leetcode.com/problems/maximum-difference-between-increasing-elements/description/) | [Java](arrays/MaximumDifference.java) | $O_T(n),\ O_S(1)$|
 
 ### Sliding Window
 
 | Problem Name | Solutions | Complexity |
 |:-:|:-:|:-:|
 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) | [Java](arrays/prefixSum/SumEqualsK.java) | $O_T(n),\ O_S(n)$ |
-| [219. Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii) | $O_T(n),\ O_S(n)$ |
+| [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii) | $O_T(n),\ O_S(n)$ |
 
 ## Strings
 
