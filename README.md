@@ -20,3 +20,9 @@
 | Problem Name | Solutions | Complexity |
 |:-:|:-:|:-:|
 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | [Java](slidingWindow/ValidAnagram.java)| $O_T(n),\ O_S(n)$ |
+
+## Ad-Hoc
+
+| Problem Name | Solutions | Complexity |
+|:-:|:-:|:-:|
+| [Missing Numbers](https://leetcode.com/problems/missing-number/) | [Java](./arrays/MissingNumber/MissingNumber.java) | $O_T(n),\ O_S(1)$ |

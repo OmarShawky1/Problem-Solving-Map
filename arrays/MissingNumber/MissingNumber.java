@@ -2,9 +2,19 @@ package arrays.MissingNumber;
 
 import java.util.Arrays;
 
+/**
+ * Find missing number from the unordered numbers from 0 to n
+ * Problem Link: https://leetcode.com/problems/missing-number/
+ */
 public class MissingNumber {
 
     // Dual Pivot Array sort
+
+    /**
+     * Return number missing between 0 to n
+     * @param nums
+     * @return num
+     */
     public int missingNumber1(int[] nums) {
         Arrays.sort(nums);
         for (int i = 0; i < nums.length; i++) if (i != nums[i]) return i;
