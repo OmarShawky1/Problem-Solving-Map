@@ -1,4 +1,4 @@
-package string;
+package string.ValidAnagram;
 
 import java.util.HashMap;
 

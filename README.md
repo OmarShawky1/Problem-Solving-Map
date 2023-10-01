@@ -19,7 +19,7 @@
 
 | Problem Name | Solutions | Complexity |
 |:-:|:-:|:-:|
-| [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | [Java](slidingWindow/ValidAnagram.java)| $O_T(n),\ O_S(n)$ |
+| [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | [Java](./string/ValidAnagram/ValidAnagram.java)| $O_T(n),\ O_S(n)$ |
 
 ## Ad-Hoc
 
