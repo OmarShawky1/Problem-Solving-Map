@@ -15,12 +15,28 @@ public class LengthOfLongestSubstring {
      * @param s
      * @return len
      */
-    public int lengthOfLongestSubstring(String s) {
+
+    // Simplest solution
+    public int lengthOfLongestSubstring1(String s) {
         HashSet<Character> set = new HashSet<>();
         int maxL = 0, start = 0, end = 0;
         while (end < s.length()) { // While we didn't reach end
             if (!set.add(s.charAt(end))) set.remove(s.charAt(start++)); // if current character is repeated, shift left
             else maxL = Math.max(maxL, (++end) - start); // else, expand right (++end) then compute max length
+        }
+        return maxL;
+    }
+
+    // Fastest solution
+    public int lengthOfLongestSubstring(String s) {
+        int[] ints = new int[256];
+        int maxL = 0, start = 0, end = 0;
+        while (end < s.length()) { // While we didn't reach end
+            if (ints[s.charAt(end)] == 1) ints[s.charAt(start++)] = 0; // if current character is repeated, shift left
+            else { // else, expand right (++end) then compute max length
+                ints[s.charAt(end++)] = 1;
+                maxL = Math.max(maxL, (end) - start);
+            }
         }
         return maxL;
     }
