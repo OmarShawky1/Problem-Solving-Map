@@ -79,6 +79,7 @@ public class SumEqualsK {
     }
 
     // Fastest with 99.89%. Code explanation is in code 3
+    // Instead of using 1 base index array, we use 0 base and deal with the specific case using 2 for loops
     public int subarraySum(int[] nums, int k) {
         if (nums.length == 0) return 0;
         int count = 0;
