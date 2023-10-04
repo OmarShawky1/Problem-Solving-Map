@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * Find missing number from the unordered numbers from 0 to n
- * Problem Link: https://leetcode.com/problems/missing-number/
+ * Problem Link: <a href="https://leetcode.com/problems/missing-number/">...</a>
  */
 public class MissingNumber {
 
@@ -12,6 +12,7 @@ public class MissingNumber {
 
     /**
      * Return number missing between 0 to n
+     *
      * @param nums
      * @return num
      */
@@ -21,11 +22,11 @@ public class MissingNumber {
         return nums.length; // return length because it does not obey the comparison above
     }
 
-    // Xor
+    // Xor, Idea is very simple, if you xor number with itself it will be 0 and the missing number will appear.
     // Solution source: https://leetcode.com/problems/missing-number/solutions/69791/4-line-simple-java-bit-manipulate-solution-with-explaination/
     public int missingNumber(int[] nums) {
         int xor = 0, i;
-        for (i = 0; i < nums.length; i++) xor = xor ^ i ^ nums[i];
+        for (i = 0; i < nums.length; i++) xor ^= i ^ nums[i];
         return xor ^ i;
     }
 

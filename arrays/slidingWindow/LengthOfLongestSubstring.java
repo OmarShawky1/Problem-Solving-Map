@@ -27,7 +27,7 @@ public class LengthOfLongestSubstring {
         return maxL;
     }
 
-    // Fastest solution
+    // Fastest solution (100% on LC)
     public int lengthOfLongestSubstring(String s) {
         int[] ints = new int[256];
         int maxL = 0, start = 0, end = 0;
