@@ -96,14 +96,6 @@ public class MaximumSubarray {
         return max;
     }
 
-    /*
-    // Optimal
-    public int maxSubArray(int[] nums) {
-    int max = nums[0];
-
-    return max;
-    }
-     */
     public static void test() {
         MaximumSubarray m = new MaximumSubarray();
         assert m.maxSubArray(new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4}) == 6;
