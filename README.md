@@ -16,6 +16,7 @@
 | [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii) | $O_T(n),\ O_S(n)$ |
 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | [Java](arrays/slidingWindow/MaximumSubarray/MaximumSubarray.java) | $O_T(n),\ O_S(1)$ |
 | [Maximum Absolute Sum of Any Subarray](https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/) | [Java](arrays/slidingWindow/MaximumAbsoluteSum/MaximumAbsoluteSum.java) | $O_T(n),\ O_S(1)$ |
+| [Maximum Sum Circular Subarray](https://leetcode.com/problems/maximum-sum-circular-subarray) | [Java](arrays/slidingWindow/MaxSubarraySumCircular.java) | $O_T(n),\ O_S(1)$ |
 
 ## Strings
 
