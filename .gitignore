@@ -1,6 +1,8 @@
 # Files
 main.*
+Test.*
 *.iml
+
 # Folders
 .idea
 out
