@@ -21,6 +21,7 @@ public class MaxSubarraySumCircular {
         }
         return max;
     }
+
     // Solution original inspiration: https://leetcode.com/problems/maximum-sum-circular-subarray/solutions/3066058/c-easy-solution-with-explaination-in-o-n-time-complexity/
     public int maxSubarraySumCircular(int[] nums) {
         int nonCircularSum = kadaneMaxSum(nums);
@@ -30,10 +31,8 @@ public class MaxSubarraySumCircular {
             totalSum += nums[i];
             nums[i] = -nums[i];
         }
-        int circularSum = totalSum + kadaneMaxSum(nums);
-        if (circularSum == 0) return nonCircularSum;
-
-        return Math.max(circularSum, nonCircularSum);
+        int circularSum = totalSum + kadaneMaxSum(nums); // Check if all array is negative
+        return circularSum == 0 ? nonCircularSum : Math.max(circularSum, nonCircularSum);
     }
 
     // Check MaximumSubarray.java
