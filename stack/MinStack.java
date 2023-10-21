@@ -2,7 +2,7 @@ package stack;
 
 /**
  * Create a Min Stack.
- * Problem Link: https://leetcode.com/problems/min-stack
+ * Problem Link: <a href="https://leetcode.com/problems/min-stack">...</a>
  */
 public class MinStack {
     Node head;
