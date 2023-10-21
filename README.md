@@ -7,6 +7,7 @@
 | Problem Name | Solutions | Complexity |
 |:-:|:-:|:-:|
 | [Maximum Difference Between Increasing Elements](https://leetcode.com/problems/maximum-difference-between-increasing-elements/description/) | [Java](arrays/MaximumDifference.java) | $O_T(n),\ O_S(1)$|
+| [Move Zeros](https://leetcode.com/problems/move-zeroes) | [Java](./arrays/twoPointers/MoveZeroes.java) | $O_T(n),\ O_S(1)$ |
 
 ### Sliding Window
 
