@@ -29,3 +29,9 @@
 | Problem Name | Solutions | Complexity |
 |:-:|:-:|:-:|
 | [Missing Numbers](https://leetcode.com/problems/missing-number/) | [Java](arrays/MissingNumber/MissingNumber.java) | $O_T(n),\ O_S(1)$ |
+
+## Stack
+
+| Problem Name | Solutions | Complexity |
+|:-:|:-:|:-:|
+| [Min Stack](https://leetcode.com/problems/min-stack) | [Java](stack/MinStack.java) | $O_T(1),\ O_S(1)$ |
