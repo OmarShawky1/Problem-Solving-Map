@@ -1,4 +1,4 @@
-package slidingWindow;
+package string.ValidAnagram;
 
 import java.util.HashMap;
 
