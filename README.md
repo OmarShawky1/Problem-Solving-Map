@@ -32,6 +32,7 @@
 | Problem Name | Solutions | Complexity |
 |:-:|:-:|:-:|
 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | [Java](string/ValidAnagram/ValidAnagram.java)| $O_T(n),\ O_S(n)$ |
+| [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | [Java](./string/IsSubsequence.java) | $O_T(n),\ O_S(n)$ |
 
 ## Stack
 
