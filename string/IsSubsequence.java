@@ -4,6 +4,10 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.TreeSet;
 
+/**
+ * Return if string s has characters of the same order & count as t despite not containing all its letters
+ * Problem Link: <a href="https://leetcode.com/problems/is-subsequence/">...</a>
+ */
 public class IsSubsequence {
 
     // Accepted but slow
