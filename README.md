@@ -25,6 +25,7 @@
 | Problem Name | Solutions | Complexity |
 |:-:|:-:|:-:|
 | [Missing Numbers](https://leetcode.com/problems/missing-number/) | [Java](arrays/MissingNumber/MissingNumber.java) | $O_T(n),\ O_S(1)$ |
+| [Trapping Rain Water Problem](https://leetcode.com/problems/trapping-rain-water/) | [Java](./arrays/adhoc/Trap.java) | $O_T(n),\ O_S(1)$ |
 
 ## Strings
 
