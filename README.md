@@ -35,6 +35,12 @@
 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | [Java](string/IsSubsequence.java) | $O_T(n),\ O_S(n)$ |
 | [Simplify Path Problem](https://leetcode.com/problems/simplify-path) | [Java](./string/SimplifyPath.java) | $O_T(n),\ O_S(n)$ |
 
+# Matrix
+
+| Problem Name | Solutions | Complexity |
+|:-:|:-:|:-:|
+| [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/) | [Java](./matrix/SearchMatrix.java) | $O_T(\lg n),\ O_S(1)$ |
+
 ## Stack
 
 | Problem Name | Solutions | Complexity |
