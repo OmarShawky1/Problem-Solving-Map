@@ -39,10 +39,16 @@
 
 | Problem Name | Solutions | Complexity |
 |:-:|:-:|:-:|
-| [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/) | [Java](./matrix/SearchMatrix.java) | $O_T(\lg n),\ O_S(1)$ |
+| [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/) | [Java](matrix/SearchMatrix.java) | $O_T(\sqrt n),\ O_S(1)$ |
 
 ## Stack
 
 | Problem Name | Solutions | Complexity |
 |:-:|:-:|:-:|
 | [Min Stack](https://leetcode.com/problems/min-stack) | [Java](stack/MinStack.java) | $O_T(1),\ O_S(1)$ |
+
+## Linked List
+
+| Problem Name | Solutions | Complexity |
+|:-:|:-:|:-:|
+| [Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/) | [Java](./linkedList/Flatten.java) | $O_T(n),\ O_S(1)$ |
