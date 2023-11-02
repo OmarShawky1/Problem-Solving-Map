@@ -2,15 +2,13 @@ package stack;
 
 /**
  * Create a Min Stack.
- * Problem Link: <a href="https://leetcode.com/problems/min-stack">...</a>
+ * Problem Link: <a href="https://leetcode.com/problems/min-stack">Min Stack</a>
  */
 public class MinStack {
     Node head;
-    int size;
 
     public MinStack() {
         head = null;
-        size = 0;
     }
 
     public void push(int val) {

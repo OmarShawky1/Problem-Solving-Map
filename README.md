@@ -35,7 +35,7 @@
 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | [Java](string/IsSubsequence.java) | $O_T(n),\ O_S(n)$ |
 | [Simplify Path Problem](https://leetcode.com/problems/simplify-path) | [Java](./string/SimplifyPath.java) | $O_T(n),\ O_S(n)$ |
 
-# Matrix
+## Matrix
 
 | Problem Name | Solutions | Complexity |
 |:-:|:-:|:-:|
