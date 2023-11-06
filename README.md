@@ -14,7 +14,7 @@
 | Problem Name | Solutions | Complexity |
 |:-:|:-:|:-:|
 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) | [Java](arrays/prefixSum/SumEqualsK.java) | $O_T(n),\ O_S(n)$ |
-| [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii) | $O_T(n),\ O_S(n)$ |
+| [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii) | [Java](string/SimplifyPath.java) | $O_T(n),\ O_S(n)$ |
 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | [Java](arrays/slidingWindow/MaximumSubarray/MaximumSubarray.java) | $O_T(n),\ O_S(1)$ |
 | [Find Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Java](arrays/slidingWindow/LengthOfLongestSubstring.java) | $O_T(n),\ O_S(1)$ |
 | [Maximum Absolute Sum of Any Subarray](https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/) | [Java](arrays/slidingWindow/MaximumAbsoluteSum/MaximumAbsoluteSum.java) | $O_T(n),\ O_S(1)$ |
