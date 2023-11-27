@@ -1,4 +1,4 @@
-package arrays.containsDuplicates;
+package arrays.adhoc.containsDuplicates;
 
 import java.util.HashSet;
 
@@ -7,7 +7,7 @@ import java.util.HashSet;
  * Problem Link: <a href="https://leetcode.com/problems/contains-duplicate/submissions/">...</a>
  */
 public class ContainsDuplicate {
-    
+
     public boolean containsDuplicate(int[] nums) {
         HashSet<Integer> set = new HashSet<>();
         for (int num : nums) if (!set.add(num)) return true;
