@@ -2,13 +2,6 @@
 
 ## Arrays
 
-### Two Pointers
-
-| Problem Name | Solutions | Complexity |
-|:-:|:-:|:-:|
-| [Maximum Difference Between Increasing Elements](https://leetcode.com/problems/maximum-difference-between-increasing-elements/description/) | [Java](arrays/MaximumDifference.java) | $O_T(n),\ O_S(1)$|
-| [Move Zeros](https://leetcode.com/problems/move-zeroes) | [Java](arrays/twoPointers/MoveZeroes.java) | $O_T(n),\ O_S(1)$ |
-
 ### Sliding Window
 
 | Problem Name | Solutions | Complexity |
@@ -19,6 +12,13 @@
 | [Find Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Java](arrays/slidingWindow/LengthOfLongestSubstring.java) | $O_T(n),\ O_S(1)$ |
 | [Maximum Absolute Sum of Any Subarray](https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/) | [Java](arrays/slidingWindow/MaximumAbsoluteSum/MaximumAbsoluteSum.java) | $O_T(n),\ O_S(1)$ |
 | [Maximum Sum Circular Subarray](https://leetcode.com/problems/maximum-sum-circular-subarray) | [Java](arrays/slidingWindow/MaxSubarraySumCircular.java) | $O_T(n),\ O_S(1)$ |
+
+### Two Pointers
+
+| Problem Name | Solutions | Complexity |
+|:-:|:-:|:-:|
+| [Maximum Difference Between Increasing Elements](https://leetcode.com/problems/maximum-difference-between-increasing-elements/description/) | [Java](arrays/MaximumDifference.java) | $O_T(n),\ O_S(1)$|
+| [Move Zeros](https://leetcode.com/problems/move-zeroes) | [Java](arrays/twoPointers/MoveZeroes.java) | $O_T(n),\ O_S(1)$ |
 
 ### Ad-Hoc
 
