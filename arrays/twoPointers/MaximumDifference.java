@@ -1,4 +1,4 @@
-package arrays;
+package arrays.twoPointers;
 
 /**
  * Finds maximum difference between elements i and any item after it.
