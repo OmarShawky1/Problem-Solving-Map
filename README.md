@@ -8,6 +8,8 @@
 |:-:|:-:|:-:|
 | [Two Sum](https://leetcode.com/problems/two-sum) | [Java](./arrays/hashing/twoSum/TwoSum.java) | $O_T(n),\ O_S(n)$ |
 
+### Prefix Sum
+
 ### Sliding Window
 
 | Problem Name | Solutions | Complexity |
@@ -54,8 +56,14 @@
 |:-:|:-:|:-:|
 | [Min Stack](https://leetcode.com/problems/min-stack) | [Java](stack/MinStack.java) | $O_T(1),\ O_S(1)$ |
 
+## Priority Queue
+
 ## Linked List
 
 | Problem Name | Solutions | Complexity |
 |:-:|:-:|:-:|
 | [Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/) | [Java](./linkedList/Flatten.java) | $O_T(n),\ O_S(1)$ |
+
+## Binary Tree
+
+## Hash Table
