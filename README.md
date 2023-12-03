@@ -2,6 +2,12 @@
 
 ## Arrays
 
+### Hashing
+
+| Problem Name | Solutions | Complexity |
+|:-:|:-:|:-:|
+| [Two Sum](https://leetcode.com/problems/two-sum) | [Java](./arrays/hashing/twoSum/TwoSum.java) | $O_T(n),\ O_S(n)$ |
+
 ### Sliding Window
 
 | Problem Name | Solutions | Complexity |
