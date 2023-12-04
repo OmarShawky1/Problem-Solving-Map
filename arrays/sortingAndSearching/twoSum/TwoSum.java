@@ -1,4 +1,4 @@
-package arrays.hashing.twoSum;
+package arrays.sortingAndSearching.twoSum;
 
 import java.util.Arrays;
 import java.util.HashMap;

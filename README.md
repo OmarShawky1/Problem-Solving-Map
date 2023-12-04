@@ -2,11 +2,11 @@
 
 ## Arrays
 
-### Hashing
+### Sorting & Searching
 
 | Problem Name | Solutions | Complexity |
 |:-:|:-:|:-:|
-| [Two Sum](https://leetcode.com/problems/two-sum) | [Java](./arrays/hashing/twoSum/TwoSum.java) | $O_T(n),\ O_S(n)$ |
+| [Two Sum](https://leetcode.com/problems/two-sum) | [Java](arrays/sortingAndSearching/twoSum/TwoSum.java) | $O_T(n),\ O_S(n)$ |
 
 ### Prefix Sum
 
