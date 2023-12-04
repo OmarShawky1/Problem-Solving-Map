@@ -7,6 +7,7 @@
 | Problem Name | Solutions | Complexity |
 |:-:|:-:|:-:|
 | [Two Sum](https://leetcode.com/problems/two-sum) | [Java](arrays/sortingAndSearching/twoSum/TwoSum.java) | $O_T(n),\ O_S(n)$ |
+| [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | [Java](./arrays/sortingAndSearching/groupAnagrams/GroupAnagrams.java) |  $O_T(n \lg n),\ O_S(n)$ |
 
 ### Prefix Sum
 
