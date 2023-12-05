@@ -72,7 +72,7 @@ public class GroupAnagrams {
         assert g.groupAnagrams(new String[]{"eat", "tea", "tan", "ate", "nat", "bat"}).get(0).get(2).
                 equals("ate");
         assert g.groupAnagrams(new String[]{"eat", "tea", "tan", "ate", "nat", "bat"}).get(1).get(0).
-                equals("tan");
+                equals("tan"); // won't work except with brute force
         assert g.groupAnagrams(new String[]{"eat", "tea", "tan", "ate", "nat", "bat"}).get(1).get(1).
                 equals("nat");
         assert g.groupAnagrams(new String[]{"eat", "tea", "tan", "ate", "nat", "bat"}).get(2).get(0).
