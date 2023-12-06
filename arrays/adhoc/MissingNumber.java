@@ -1,4 +1,4 @@
-package arrays.adhoc.MissingNumber;
+package arrays.adhoc;
 
 import java.util.Arrays;
 

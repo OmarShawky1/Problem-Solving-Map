@@ -1,4 +1,4 @@
-package arrays.sortingAndSearching.groupAnagrams;
+package arrays.sortingAndSearching;
 
 import java.util.ArrayList;
 import java.util.Arrays;

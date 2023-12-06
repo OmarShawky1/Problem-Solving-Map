@@ -1,4 +1,4 @@
-package arrays.sortingAndSearching.topKFrequenty;
+package arrays.sortingAndSearching;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package arrays.adhoc.containsDuplicates;
+package arrays.adhoc;
 
 import java.util.HashSet;
 

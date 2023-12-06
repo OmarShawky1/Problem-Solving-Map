@@ -1,4 +1,4 @@
-package arrays.slidingWindow.MaximumSubarray;
+package arrays.slidingWindow;
 
 public class MaximumSubarray {
     // Brute: TLE

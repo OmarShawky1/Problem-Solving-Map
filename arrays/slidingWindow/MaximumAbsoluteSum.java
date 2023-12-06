@@ -1,4 +1,4 @@
-package arrays.slidingWindow.MaximumAbsoluteSum;
+package arrays.slidingWindow;
 
 public class MaximumAbsoluteSum {
     public int maxAbsoluteSumK(int[] nums) {
