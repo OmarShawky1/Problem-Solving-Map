@@ -10,6 +10,7 @@ public class ValidAnagram {
 
     /**
      * Return true if t is anagram of f; false otherwise.
+     *
      * @param s
      * @param t
      * @return bool
@@ -32,7 +33,7 @@ public class ValidAnagram {
         for (int i = 0; i < t.length(); i++) {
             char c = t.charAt(i);
             if (map.get(c) == null || map.get(c) == 0) return false;
-            else map.merge(c,-1,Integer::sum);
+            else map.merge(c, -1, Integer::sum);
         }
         return true;
     }
