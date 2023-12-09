@@ -8,14 +8,6 @@ import java.util.HashSet;
  * Problem Link: <a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/">...</a>
  */
 public class LengthOfLongestSubstring {
-
-    /**
-     * Return len of longest substring [a-z]*
-     *
-     * @param s
-     * @return len
-     */
-
     // Simplest solution
     public int lengthOfLongestSubstring1(String s) {
         HashSet<Character> set = new HashSet<>();
