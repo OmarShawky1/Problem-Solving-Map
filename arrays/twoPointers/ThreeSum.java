@@ -40,7 +40,7 @@ public class ThreeSum {
     }
 
     // Two Pointer Solution
-    public List<List<Integer>> threeSum2(int[] nums) {
+    public List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums);
         this.nums = nums;
         ArrayList<List<Integer>> ans = new ArrayList<>();
@@ -84,9 +84,9 @@ public class ThreeSum {
     }
 
     // Second Fastest
-    // Using Own List implementation (get, size and init) and Hash Tables
+    // Hash Tables and Anonymous Abstract List implementation (get, size and init) for compiler optimization.
     // import java.util.*; // Use it when submitting
-    class Solution {
+    class Solution1 {
         private List<List<Integer>> res;
         public List<List<Integer>> threeSum(int[] nums) {
             return new AbstractList<List<Integer>>() {
@@ -120,7 +120,7 @@ public class ThreeSum {
     }
 
     // Fastest possible solution, 0 time.
-    // Using Own List implementation (get, size and init) and Two Pointers
+    // Two Pointers and Anonymous Abstract List implementation (get, size and init) for compiler optimization
     // import java.util.*; // Use it when submitting
     class Solution2 {
         private List<List<Integer>> res;
