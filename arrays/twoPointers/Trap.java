@@ -1,4 +1,4 @@
-package arrays.adhoc;
+package arrays.twoPointers;
 
 /**
  * Find the dips (water trapped) between elevations (heights)
@@ -70,13 +70,13 @@ public class Trap {
         int maxLeft = 0;
         int maxRight = 0;
 
-        while (left <= right) {
-            if (height[left] <= height[right]) {
-                if (height[left] >= maxLeft) maxLeft = height[left];
+        while (left < right) {
+            if (height[left] < height[right]) {
+                if (height[left] > maxLeft) maxLeft = height[left];
                 else totalWater += maxLeft - height[left];
                 left++;
             } else {
-                if (height[right] >= maxRight) maxRight = height[right];
+                if (height[right] > maxRight) maxRight = height[right];
                 else totalWater += maxRight - height[right];
                 right--;
             }
