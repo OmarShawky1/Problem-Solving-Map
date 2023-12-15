@@ -72,7 +72,7 @@ public class GenerateParenthesis {
             generate(current, left - 1, right, result);
             current.deleteCharAt(current.length() - 1);
         }
-        
+
         if (right > left) {
             current.append( ")");
             generate(current, left, right - 1, result);
