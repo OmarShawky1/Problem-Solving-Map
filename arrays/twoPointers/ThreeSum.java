@@ -61,7 +61,7 @@ public class ThreeSum {
                 left++;
                 continue;
             }
-            /* Alternative for left
+            /* Alternative for right
             if (right != nums.length - 1 && nums[right] == nums[right + 1]) {
                 right--;
                 continue;
