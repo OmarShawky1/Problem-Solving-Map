@@ -1,4 +1,4 @@
-package arrays.stack;
+package stack;
 
 import java.util.Arrays;
 import java.util.Comparator;
