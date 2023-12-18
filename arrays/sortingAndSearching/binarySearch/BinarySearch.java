@@ -1,4 +1,4 @@
-package arrays.binarySearch;
+package arrays.sortingAndSearching.binarySearch;
 
 public class BinarySearch {
     public int search(int[] nums, int target) {

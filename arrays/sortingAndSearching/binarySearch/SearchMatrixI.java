@@ -1,4 +1,4 @@
-package arrays.binarySearch;
+package arrays.sortingAndSearching.binarySearch;
 
 public class SearchMatrixI {
     public boolean searchMatrix(int[][] matrix, int target) {
