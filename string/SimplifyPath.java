@@ -41,6 +41,7 @@ public class SimplifyPath {
         return sb.length() == 0 ? "/" : sb.toString();
     }
 
+    // Most Maintainable code
     // Using split iterators.
     public String simplifyPath2(String path) {
         String[] chunks = path.split("/");
