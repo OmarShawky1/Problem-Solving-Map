@@ -43,12 +43,11 @@ public class SimplifyPath {
 
     // Most Maintainable code
     // Using split iterators.
-    public String simplifyPath2(String path) {
+    public String simplifyPath(String path) {
         String[] chunks = path.split("/");
         Stack<String> chunksSt = new Stack<>();
 
-        for (int i = 0; i < chunks.length; i++) {
-            String st = chunks[i];
+        for (String st : chunks) {
             if (!st.isEmpty() && !st.equals(".")) {
                 if (st.equals("..")) {
                     if (!chunksSt.isEmpty()) chunksSt.pop();
@@ -62,7 +61,7 @@ public class SimplifyPath {
     }
 
     // 100% on LC; same as above but works it backwards without needing to append and remove in case of /..
-    public String simplifyPath(String path) {
+    public String simplifyPath2(String path) {
         StringBuilder sb = new StringBuilder();
         // this boolean represents whether this char is followed by a slash
         // initialized to true to skip trailing slashes
