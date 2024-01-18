@@ -12,7 +12,7 @@ public class SearchRotatedArray {
 
             if (nums[mid] == target) return mid;
 
-            // Is left is sorted?
+            // Is left sorted?
             // if (left == mid || nums[left] < nums[mid]) // Same as below condition but more clearer
             if (nums[left] <= nums[mid]) { // the = in the condition is to check if left and mid pointer are the same
                 // Is target between left and mid?
