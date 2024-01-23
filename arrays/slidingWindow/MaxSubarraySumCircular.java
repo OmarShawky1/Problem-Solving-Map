@@ -31,6 +31,8 @@ public class MaxSubarraySumCircular {
             totalSum += nums[i];
             nums[i] = -nums[i];
         }
+        // Max circular = total - min subarray = total - kadane's of inverted array (E.g., A=[5,-3,5], A Inv = [-5,3,-5]
+        // +kademeMaxSum reason: To add what we removed. (E.g., TotalSum = 5-3+5, min = -3, K inv = 3, T=5-3+5+3=10)
         int circularSum = totalSum + kadaneMaxSum(nums); // Check if all array is negative
         return circularSum == 0 ? nonCircularSum : Math.max(circularSum, nonCircularSum);
     }
