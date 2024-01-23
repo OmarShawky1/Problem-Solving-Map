@@ -13,7 +13,7 @@ public class LengthOfLongestSubstring {
         HashSet<Character> set = new HashSet<>();
         int maxL = 0, start = 0, end = 0;
         while (end < s.length()) { // While we didn't reach end
-            if (!set.add(s.charAt(end))) set.remove(s.charAt(start++)); // if current character is repeated, shift left
+            if (!set.add(s.charAt(end))) set.remove(s.charAt(start++)); // if current character is repeated, shift right
             else maxL = Math.max(maxL, (++end) - start); // else, expand right (++end) then compute max length
         }
         return maxL;
@@ -21,13 +21,13 @@ public class LengthOfLongestSubstring {
 
     // Fastest solution (100% on LC)
     public int lengthOfLongestSubstring(String s) {
-        int[] ints = new int[256];
+        int[] freq = new int[256];
         int maxL = 0, start = 0, end = 0;
         while (end < s.length()) { // While we didn't reach end
-            if (ints[s.charAt(end)] == 1) ints[s.charAt(start++)] = 0; // if current character is repeated, shift left
+            if (freq[s.charAt(end)] == 1) freq[s.charAt(start++)] = 0; // if current character is repeated, shift right
             else { // else, expand right (++end) then compute max length
-                ints[s.charAt(end++)] = 1;
-                maxL = Math.max(maxL, (end) - start);
+                freq[s.charAt(end)] = 1;
+                maxL = Math.max(maxL, (++end) - start);
             }
         }
         return maxL;
