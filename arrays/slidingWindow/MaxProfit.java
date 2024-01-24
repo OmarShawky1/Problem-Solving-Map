@@ -29,6 +29,6 @@ public class MaxProfit {
         MaxProfit m = new MaxProfit();
         assert m.maxProfit(new int[]{7, 1, 5, 3, 6, 4}) == 5;
         assert m.maxProfit(new int[]{7, 6, 4, 3, 1}) == 0;
-        assert m.maxProfit(new int[]{3,2,6,5,0,3}) == 4;
+        assert m.maxProfit(new int[]{3, 2, 6, 5, 0, 3}) == 4;
     }
 }
