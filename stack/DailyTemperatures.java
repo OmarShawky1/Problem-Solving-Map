@@ -36,7 +36,7 @@ public class DailyTemperatures {
         return result;
     }
 
-    // DP solution using Accumulation Array solution
+    // DP solution
     public int[] dailyTemperatures(int[] temperatures) {
         int n = temperatures.length;
         int hottest = 0;
@@ -66,7 +66,8 @@ public class DailyTemperatures {
         assert Arrays.equals(d.dailyTemperatures(new int[]{30, 60, 90}), new int[]{1, 1, 0});
         assert Arrays.equals(d.dailyTemperatures(new int[]{73, 74, 75, 71, 69, 72, 76, 73}),
                 new int[]{1, 1, 4, 2, 1, 1, 0, 0});
-        assert Arrays.equals(d.dailyTemperatures(new int[]{30,40,50,60}), new int[]{1,1,1,0});
-
+        assert Arrays.equals(d.dailyTemperatures(new int[]{30, 40, 50, 60}), new int[]{1, 1, 1, 0});
+        assert Arrays.equals(d.dailyTemperatures(new int[]{1, 2, 3, 4, 5}), new int[]{1, 1, 1, 1, 0});
+        assert Arrays.equals(d.dailyTemperatures(new int[]{5, 4, 3, 2, 1}), new int[]{0, 0, 0, 0, 0});
     }
 }
