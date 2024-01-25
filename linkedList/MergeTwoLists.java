@@ -22,7 +22,7 @@ public class MergeTwoLists {
         else current.next = list2;
         return newH.next;
     }
-    
+
     private class ListNode {
         private int val;
         ListNode next;
