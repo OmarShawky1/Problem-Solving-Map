@@ -32,6 +32,7 @@ public class CheckInclusion {
         return false;
     }
 
+    // Most maintainable
     public boolean checkInclusion2(String s1, String s2) {
         if (s1.length() > s2.length()) return false;
 
@@ -71,7 +72,7 @@ public class CheckInclusion {
 
         for (char c : s1.toCharArray()) ++count[c - 'a'];
 
-        for (int right = 0; right < n2; ++right) {
+        for (int right = 0; right < n2; right++) {
             // If char count is 1 or more, decrement remaining window size k
             if (count[s2Arr[right] - 'a']-- > 0) k--;
 
@@ -80,7 +81,7 @@ public class CheckInclusion {
                 // And all our window size is correct (right is not so far ahead of left more than k), return true
                 if (right - left + 1 == n1) return true;
 
-                // else, if value is -1 make it 0 and if it is 0 or more, increase window size
+                // else, if value is -1 make it 0 and loop. if it is 0 or more, increase window size and break.
                 if (++count[s2Arr[left++] - 'a'] > 0) k++;
             }
         }

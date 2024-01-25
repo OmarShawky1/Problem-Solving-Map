@@ -31,5 +31,7 @@ public class CharacterReplacement {
 
     public static void test() {
         CharacterReplacement c = new CharacterReplacement();
+        assert c.characterReplacement("ABAB", 2) == 4;
+        assert c.characterReplacement("AABABBA", 1) == 4;
     }
 }
