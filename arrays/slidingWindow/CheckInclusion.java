@@ -63,6 +63,35 @@ public class CheckInclusion {
         return false;
     }
 
+    // Same as most maintainable
+    public boolean checkInclusion3(String s1, String s2) {
+        // Indexing characters and their frequencies
+        int[] countS1 = new int[26];
+        for (char c : s1.toCharArray()) countS1[c - 'a']++;
+        int k = s1.length(); // Fixed size window
+
+        int[] windowCount = new int[26];
+        int start = 0;
+        for (int end = 0; end < s2.length(); end++) {
+            // Expand until k (max size)
+            if (k > 0) {
+                windowCount[s2.charAt(end) - 'a']++;
+                k--;
+            }
+
+            // if value found, compare, if equal return true else decrease freq and shift right (start++)
+            if (k == 0) {
+                if (Arrays.equals(countS1, windowCount)) return true;
+                else {
+                    windowCount[s2.charAt(start++) - 'a']--;
+                    k++;
+                }
+            }
+        }
+        return false;
+    }
+
+
     // Optimal solution
     public boolean checkInclusion(String s1, String s2) {
         int n1 = s1.length(), n2 = s2.length(); // Important because O(n) for length() is n
