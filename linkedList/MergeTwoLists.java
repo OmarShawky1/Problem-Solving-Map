@@ -30,13 +30,6 @@ public class MergeTwoLists {
         ListNode(int val) {
             this.val = val;
         }
-
-        /*ListNode(int[] list, int i) {
-            if (i < list.length) {
-              val = list[i];
-              next = new ListNode(list, i + 1);
-            }
-        }*/
     }
 
     public static void test() {
