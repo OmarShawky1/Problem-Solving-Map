@@ -23,15 +23,6 @@ public class MergeTwoLists {
         return newH.next;
     }
 
-    private class ListNode {
-        private int val;
-        ListNode next;
-
-        ListNode(int val) {
-            this.val = val;
-        }
-    }
-
     public static void test() {
         MergeTwoLists m = new MergeTwoLists();
     }

@@ -60,26 +60,17 @@ public class ReorderList {
         return slow;
     }
 
-    private class ListNode {
-        private int val;
-        ListNode next;
-
-        ListNode(int val) {
-            this.val = val;
-        }
-    }
-
     // Back tracking solution: https://chat.openai.com/share/d4bdc04e-49ce-4f37-951d-b7fc056faba8
     // Fastest
     class Solution {
-        public static void reorderList(ListNode head) {
+        public void reorderList(ListNode head) {
             if (head.next == null) {
                 return;
             }
             reorderList2(head, head.next);
         }
 
-        public static ListNode reorderList2(ListNode head, ListNode curr) {
+        public ListNode reorderList2(ListNode head, ListNode curr) {
             ListNode temp;
             if (curr.next != null) {
                 temp = reorderList2(head, curr.next);
