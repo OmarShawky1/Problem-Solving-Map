@@ -23,7 +23,7 @@ public class CarFleet {
         return res;
     }
 
-    // Stack solution, Option but neither the fastest or most maintainable
+    // Stack solution, Option but neither the fastest nor most maintainable
     public int carFleet2(int target, int[] position, int[] speed) {
         if (position.length == 1) return 1;
         Stack<Double> stack = new Stack<>();
@@ -49,7 +49,8 @@ public class CarFleet {
     // Fastest and most maintainable
     public int carFleet(int target, int[] position, int[] speed) {
         float[] time = new float[target];
-        for (int i = 0; i < position.length; i++) time[position[i]] = (float) (target - position[i]) / speed[i];
+        for (int i = 0; i < position.length; i++)
+            time[position[i]] = (float) (target - position[i]) / speed[i];
 
         int fleet = 0;
         float maxTime = 0;
