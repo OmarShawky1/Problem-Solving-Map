@@ -1,6 +1,8 @@
 package linkedList;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 public class LRUCache {
 
@@ -94,5 +96,29 @@ public class LRUCache {
         assert lRUCache.get(1) == -1;    // return -1 (not found)
         assert lRUCache.get(3) == 3;    // return 3
         assert lRUCache.get(4) == 4;    // return 4
+    }
+}
+
+// Optimal & Most Maintainable
+public class LRUCache {
+    private final LinkedHashMap<Integer, Integer> map;
+    private final int CAPACITY;
+    public LRUCache(int capacity) {
+        CAPACITY = capacity;
+        map = new LinkedHashMap<Integer, Integer>(capacity, 0.75f, true) {
+            protected boolean removeEldestEntry(Map.Entry eldest){
+                return size() > CAPACITY;
+            }
+        };
+    }
+
+    // This method works in O(1)
+    public int get(int key){
+        return map.getOrDefault(key, -1);
+    }
+
+    // This method works in O(1)
+    public void put(int key, int value) {
+        map.put(key, value);
     }
 }
