@@ -100,10 +100,10 @@ public class LRUCache {
 }
 
 // Optimal & Most Maintainable
-public class LRUCache {
+class LRUCache2 {
     private final LinkedHashMap<Integer, Integer> map;
     private final int CAPACITY;
-    public LRUCache(int capacity) {
+    public LRUCache2(int capacity) {
         CAPACITY = capacity;
         map = new LinkedHashMap<Integer, Integer>(capacity, 0.75f, true) {
             protected boolean removeEldestEntry(Map.Entry eldest){
