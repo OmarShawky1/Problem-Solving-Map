@@ -1,5 +1,6 @@
 package linkedList;
 
+import java.util.Comparator;
 import java.util.PriorityQueue;
 
 public class MergeKLists {
@@ -11,16 +12,39 @@ public class MergeKLists {
         PriorityQueue<Integer> pq = new PriorityQueue<>();
         for (ListNode ln : lists)
             for (; ln != null; ln = ln.next) pq.add(ln.val);
-        
+
         // Pop priority Queue in a listNode
         for (ListNode cur = res; !pq.isEmpty(); cur = cur.next) cur.next = new ListNode(pq.poll());
 
         return res.next;
     }
 
+    // Maintainable Code with enhanced asymptotic algorithmic complexity but slower on LC because of cache pessimization
+    public ListNode mergeKLists1(ListNode[] lists) {
+        ListNode res = new ListNode(0); // Dummy val
+        // Displace first element of each list
+        // Make PQ consume Integer comparator (receives integer and gives boolean) with parameter "node" and compare val
+        PriorityQueue<ListNode> pq = new PriorityQueue<>(Comparator.comparingInt(node -> node.val));
+        for (ListNode ln : lists) if (ln != null) pq.add(ln);
+
+        // Actively pop and push from and to PQ
+        ListNode cur = res;
+        while (!pq.isEmpty()) {
+            // Pop first node from pq
+            ListNode node = pq.poll();
+            // next points to node
+            cur.next = node;
+            // if the next of that node is not null, push its next
+            if (node.next != null) pq.add(node.next);
+            // move next
+            cur = cur.next;
+        }
+        return res.next;
+    }
+
     // Optimal Solution on LC
     // Merge sort Algorithm
-    public ListNode mergeKLists1(ListNode[] lists) {
+    public ListNode mergeKLists2(ListNode[] lists) {
         // Base case, unnecessary check
         if (lists == null || lists.length == 0) return null;
 
