@@ -28,15 +28,16 @@ public class MergeKLists {
         for (ListNode ln : lists) if (ln != null) pq.add(ln);
 
         // Actively pop and push from and to PQ
+        // Continue until all nodes are processed
         ListNode cur = res;
         while (!pq.isEmpty()) {
-            // Pop first node from pq
+            // Get the node with the smallest value from the priority queue
             ListNode node = pq.poll();
-            // next points to node
+            // Add this node to the result list
             cur.next = node;
-            // if the next of that node is not null, push its next
+            // Move the node pointer to the next node in its list
             if (node.next != null) pq.add(node.next);
-            // move next
+            // Move the current pointer to the added node
             cur = cur.next;
         }
         return res.next;
