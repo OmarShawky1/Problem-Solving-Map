@@ -5,15 +5,13 @@ import java.util.PriorityQueue;
 public class MergeKLists {
 
     // Most Maintainable Code
-    private final PriorityQueue<Integer> pq = new PriorityQueue<>();
     public ListNode mergeKLists(ListNode[] lists) {
         ListNode res = new ListNode(0); // Dummy val
-
         // Displace all elements inside priority Queue
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
         for (ListNode ln : lists)
             for (; ln != null; ln = ln.next) pq.add(ln.val);
-
-
+        
         // Pop priority Queue in a listNode
         for (ListNode cur = res; !pq.isEmpty(); cur = cur.next) cur.next = new ListNode(pq.poll());
 
@@ -45,26 +43,26 @@ public class MergeKLists {
 
     private ListNode mergeList(ListNode n1, ListNode n2) {
         ListNode mergedList = new ListNode(-1); // Dummy head
-        ListNode prev = mergedList;
+        ListNode curr = mergedList;
         while (n1 != null && n2 != null) {
             if (n1.val < n2.val) {
-                prev.next = n1;
+                curr.next = n1;
                 n1 = n1.next;
             } else {
-                prev.next = n2;
+                curr.next = n2;
                 n2 = n2.next;
             }
-            prev = prev.next;
+            curr = curr.next;
         }
 
         // Add the remaining list (one of both at most is still not null from above condition)
-        prev.next = (n1 != null) ? n1 : n2;
+        curr.next = (n1 != null) ? n1 : n2;
 
         return mergedList.next;
     }
 
     public static void test() {
         MergeKLists m = new MergeKLists();
-        
+
     }
 }
