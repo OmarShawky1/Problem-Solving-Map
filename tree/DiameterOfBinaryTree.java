@@ -12,7 +12,7 @@ public class DiameterOfBinaryTree {
     // Normal Recursion and using global variable
     private int longestPath(TreeNode node) {
         if (node == null) return 0;
-        
+
         int leftHeight = longestPath(node.left);
         int rightHeight = longestPath(node.right);
 
