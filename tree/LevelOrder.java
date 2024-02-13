@@ -69,19 +69,19 @@ public class LevelOrder {
     public List<List<Integer>> levelOrder(TreeNode root) {
         //Using queues
         List<List<Integer>> ls = new ArrayList<>();
-        preOrder(root, 0, ls);
+        inOrder(root, 0, ls);
         return ls;
     }
 
-    public static void preOrder(TreeNode root, int level, List<List<Integer>> ls) {
+    public static void inOrder(TreeNode root, int level, List<List<Integer>> ls) {
         if (root == null) return;
         if (ls.size() == level) {
             List<Integer> li = new ArrayList<>();
             li.add(root.val);
             ls.add(li);
         } else ls.get(level).add(root.val); // If level is already available, just add to its list.
-        preOrder(root.left, level + 1, ls);
-        preOrder(root.right, level + 1, ls);
+        inOrder(root.left, level + 1, ls);
+        inOrder(root.right, level + 1, ls);
     }
 
     public static void test() {
