@@ -82,7 +82,6 @@ public class LevelOrder {
         } else ls.get(level).add(root.val); // If level is already available, just add to its list.
         preOrder(root.left, level + 1, ls);
         preOrder(root.right, level + 1, ls);
-        
     }
 
     public static void test() {
