@@ -34,15 +34,15 @@ public class RightSideView {
 
     public List<Integer> rightSideView2(TreeNode root) {
         List<Integer> ans = new ArrayList<>();
-        inversePreOrder(root, 0, ans);
+        reversePreOrder(root, 0, ans);
         return ans;
     }
 
-    public void inversePreOrder(TreeNode node, int level, List<Integer> ans) {
+    public void reversePreOrder(TreeNode node, int level, List<Integer> ans) {
         if (node != null) {
             if (level == ans.size()) ans.add(node.val);
-            inversePreOrder(node.right, level + 1, ans);
-            inversePreOrder(node.left, level + 1, ans);
+            reversePreOrder(node.right, level + 1, ans);
+            reversePreOrder(node.left, level + 1, ans);
         }
     }
 
