@@ -9,10 +9,6 @@ package tree;public class SameTree {
         return p.val == q.val && isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
     }
 
-    private boolean isSameTree(TreeNode p, TreeNode q, boolean equal) {
-        return p.val == q.val && isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
-    }
-
     public static void test() {
 
     }

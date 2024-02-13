@@ -5,8 +5,7 @@ public class IsSubTree {
     public boolean isSubtree(TreeNode root, TreeNode subRoot) {
         // If root is null (base case) return false unless subroot is also null
         if (root == null) return subRoot == null;
-        // Else, if values match, use isSameTree
-        // Otherwise, keep trying.
+        // Else, if values match, use isSameTree. Otherwise, keep trying.
         return (root.val == subRoot.val && isSameTree(root, subRoot))
                 || isSubtree(root.left, subRoot)
                 || isSubtree(root.right, subRoot);
